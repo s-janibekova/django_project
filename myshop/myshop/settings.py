@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
      'debug_toolbar',
-     'shop',
+    'shop.apps.ShopConfig',
+    'cart.apps.CartConfig',
 ]
 
 MIDDLEWARE = [
@@ -117,6 +118,9 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+
+CART_SESSION_ID = 'cart'
 
 
 # Static files (CSS, JavaScript, Images)
